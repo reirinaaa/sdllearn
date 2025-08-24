@@ -1,3 +1,0 @@
-C:\reirina\cmake-4.1.0-rc4-windows-x86_64\bin\cmake.exe -E rm -f CMakeFiles\sdlapp.dir/objects.a
-C:\reirina\llvm-mingw-20250812-ucrt-x86_64\bin\llvm-ar.exe qc CMakeFiles\sdlapp.dir/objects.a @CMakeFiles\sdlapp.dir\objects1.rsp
-C:\reirina\llvm-mingw-20250812-ucrt-x86_64\bin\c++.exe -Wl,--whole-archive CMakeFiles\sdlapp.dir/objects.a -Wl,--no-whole-archive -o sdlapp.exe -Wl,--out-implib,libsdlapp.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\sdlapp.dir\linkLibs.rsp

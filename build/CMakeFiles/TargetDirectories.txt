@@ -1,4 +1,0 @@
-C:/reirina/dev-llvm/SDLlearn/build/CMakeFiles/sdlapp.dir
-C:/reirina/dev-llvm/SDLlearn/build/CMakeFiles/arch.dir
-C:/reirina/dev-llvm/SDLlearn/build/CMakeFiles/edit_cache.dir
-C:/reirina/dev-llvm/SDLlearn/build/CMakeFiles/rebuild_cache.dir
