@@ -17,7 +17,9 @@ list(APPEND CMAKE_PREFIX_PATH "${CMAKE_CURRENT_SOURCE_DIR}/../SDLdeps")
 find_package(SDL3 REQUIRED)
 
 add_executable(sdlapp main.cpp)
-
 target_link_libraries(sdlapp SDL3::SDL3)
 
 add_executable(arch arch.c)
+
+add_executable(snake snake.c)
+target_link_libraries(snake SDL3::SDL3)
