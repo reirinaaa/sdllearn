@@ -1,8 +1,10 @@
 env = Environment(tools = ['mingw'])
-env['CC'] = 'clang'
-env['CXX'] = 'clang++'
+# env['CC'] = 'clang'
+# env['CXX'] = 'clang++'
+# env['ENV']['PATH'] = ['C:/reirina/llvm-mingw-20250812-ucrt-x86_64/bin']
 
-env['ENV']['PATH'] = ['C:/reirina/llvm-mingw-20250812-ucrt-x86_64/bin']
+env['ENV']['PATH'] = ['C:/reirina/TDM-GCC-64/bin']
+
 env.Append(CPPPATH = ['../SDLdeps/include'])
 env.Append(LIBPATH = ['../SDLdeps/lib'])
 
@@ -13,8 +15,7 @@ env.Append(LIBPATH = ['../SDLdeps/lib'])
 # libSDL3 = File('../SDLdeps/lib/libSDL3.a')
 # env.Append(LIBS = [libSDL3])
 
-# env.Append(LINKFLAGS = ['-static'])
-
-env.Append(LIBS = ['SDL3'])
+env.Append(LINKFLAGS = ['-static'])
+env.Append(LIBS = ['SDL3', 'm', 'kernel32', 'user32', 'gdi32', 'winmm', 'imm32', 'ole32', 'oleaut32', 'version', 'uuid', 'advapi32', 'setupapi', 'shell32', 'dinput8'])
 
 env.Program('snake.c')
