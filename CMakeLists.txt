@@ -3,6 +3,12 @@
 # cmake --build . --config Release --target install
 # the --config must match -DCMAKE_BUILD_TYPE when compile with xcode and MSVC
 
+# -DCMAKE_C_COMPILER=C:\reirina\llvm-mingw-20250812-ucrt-x86_64\bin\clang.exe -DCMAKE_CXX_COMPILER=C:\reirina\llvm-mingw-20250812-ucrt-x86_64\bin\clang++.exe
+
+# cmake -DCMAKE_INSTALL_PREFIX=C:\reirina\dev-llvm\SDLdeps -DSDL_SHARED=OFF -DSDL_STATIC=ON ..
+# cmake --build . --target install
+
+
 # Compile Project using SDL3
 # cmake -DCMAKE_BUILD_TYPE=Release ..
 # cmake --build . --config Release
